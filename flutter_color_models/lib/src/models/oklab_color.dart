@@ -185,5 +185,8 @@ class OklabColor extends cm.OklabColor
 
   @override
   OklabColor convert(cm.ColorModel other) => other.toOklabColor().cast();
+
+  @override
+  int toARGB32() => toColor().value;
     
 }

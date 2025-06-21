@@ -215,5 +215,8 @@ class HsbColor extends cm.HsbColor
 
   @override
   HsbColor convert(cm.ColorModel other) => other.toHsbColor().cast();
+
+  @override
+  int toARGB32() => toColor().value;
   
 }

@@ -212,5 +212,8 @@ class LabColor extends cm.LabColor
 
   @override
   LabColor convert(cm.ColorModel other) => other.toLabColor().cast();
+
+  @override
+  int toARGB32() => toColor().value;
     
 }

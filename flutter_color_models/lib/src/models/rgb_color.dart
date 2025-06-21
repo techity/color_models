@@ -222,5 +222,8 @@ class RgbColor extends cm.RgbColor
 
   @override
   RgbColor convert(cm.ColorModel other) => other.toRgbColor().cast();
+
+  @override
+  int toARGB32() => toColor().value;
   
 }

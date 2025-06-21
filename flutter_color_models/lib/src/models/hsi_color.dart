@@ -210,4 +210,7 @@ class HsiColor extends cm.HsiColor
   @override
   HsiColor convert(cm.ColorModel other) => other.toHsiColor().cast();
 
+  @override
+  int toARGB32() => toColor().value;
+
 }

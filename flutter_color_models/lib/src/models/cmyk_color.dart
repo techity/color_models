@@ -229,5 +229,8 @@ class CmykColor extends cm.CmykColor
 
   @override
   CmykColor convert(cm.ColorModel other) => other.toCmykColor().cast();
+
+  @override
+  int toARGB32() => toColor().value;
   
 }

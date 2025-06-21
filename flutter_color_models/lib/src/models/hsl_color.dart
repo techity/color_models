@@ -210,4 +210,7 @@ class HslColor extends cm.HslColor
   @override
   HslColor convert(cm.ColorModel other) => other.toHslColor().cast();
 
+  @override
+  int toARGB32() => toColor().value;
+
 }

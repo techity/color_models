@@ -216,5 +216,8 @@ class XyzColor extends cm.XyzColor
 
   @override
   XyzColor convert(cm.ColorModel other) => other.toXyzColor().cast();
+
+  @override
+  int toARGB32() => toColor().value;
     
 }
